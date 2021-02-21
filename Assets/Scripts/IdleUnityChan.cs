@@ -5,6 +5,7 @@
 //
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace UnityChan
 {
@@ -86,6 +87,10 @@ namespace UnityChan
 			}
 			else {
 				h = 0;
+			}
+
+			if (seconds == 60) {
+				AsyncOperation operation = SceneManager.LoadSceneAsync("WinScene", LoadSceneMode.Single);
 			}
 		
 			anim.SetFloat ("Speed", v);							// Animator側で設定している"Speed"パラメタにvを渡す
