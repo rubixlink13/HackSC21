@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(decHealth());
       }
 
-      if (collision.gameObject.tag == "Pill") {
+      if (collision.gameObject.tag == "Pill" && health != 1.0f) {
         health += 0.2f;
         Destroy(collision.gameObject);
       }

@@ -200,7 +200,7 @@ namespace UnityChan
 		}
 
 		float RandomVelocity() {
-			return Random.Range(0f, 1.0f);
+			return Random.Range(0.2f, 0.5f);
 		}
 
 		int RandomDirection() {
