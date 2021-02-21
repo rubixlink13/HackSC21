@@ -89,7 +89,7 @@ namespace UnityChan
 				h = 0;
 			}
 
-			if (seconds == 60) {
+			if (seconds == 30) {
 				AsyncOperation operation = SceneManager.LoadSceneAsync("WinScene", LoadSceneMode.Single);
 			}
 		
