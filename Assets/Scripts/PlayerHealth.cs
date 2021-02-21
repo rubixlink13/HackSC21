@@ -42,6 +42,9 @@ public class PlayerHealth : MonoBehaviour
 
       if (collision.gameObject.tag == "Pill" && health != 1.0f) {
         health += 0.2f;
+        if (health > 1.0f) {
+          health = 1.0f;
+        }
         Destroy(collision.gameObject);
       }
 
