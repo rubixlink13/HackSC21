@@ -209,7 +209,14 @@ namespace UnityChan
 		}
 
 		void OnCollisionEnter(Collision collision) {
-			isColliding = true;
+			if (collision.gameObject.tag == "Wall") {
+				isColliding = true;
+			}
+		}
+		void OnCollisionStay(Collision collision) {
+			if (collision.gameObject.tag == "Wall") {
+				isColliding = true;
+			}
 		}
 
 		float RandomVelocity() {
