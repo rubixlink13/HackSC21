@@ -44,6 +44,7 @@ namespace UnityChan
 
 		private int h = 0;
 		private float v = 0.25f;
+		private bool isColliding = false;
 
 		private GameObject cameraObject;	// メインカメラへの参照
 
@@ -79,6 +80,9 @@ namespace UnityChan
 			if (seconds % 10 == 0) {
 				h = RandomDirection();
 				v = RandomVelocity();
+			} else if (isColliding){
+				h = RandomDirection();
+				isColliding = false;
 			}
 			else {
 				h = 0;
@@ -197,6 +201,10 @@ namespace UnityChan
 			// コンポーネントのHeight、Centerの初期値を戻す
 			col.height = orgColHight;
 			col.center = orgVectColCenter;
+		}
+
+		void OnCollisionEnter(Collision collision) {
+			isColliding = true;
 		}
 
 		float RandomVelocity() {
