@@ -6852,7 +6852,7 @@ GameObject:
   - component: {fileID: 255617141226723742}
   m_Layer: 0
   m_Name: infected_unity
-  m_TagString: Untagged
+  m_TagString: CovidField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6866,7 +6866,7 @@ Transform:
   m_GameObject: {fileID: 1556429919999810850}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 377.6877, y: 0, z: 524.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_Children:
   - {fileID: 1556429920000229704}
   - {fileID: 1556429920000229514}
@@ -8504,7 +8504,7 @@ GameObject:
   - component: {fileID: 1591370096070470206}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: CovidField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8578,8 +8578,8 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591370096070470144}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

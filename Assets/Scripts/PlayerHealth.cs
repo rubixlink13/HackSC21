@@ -39,6 +39,13 @@ public class PlayerHealth : MonoBehaviour
         stilIn = true;
         StartCoroutine(decHealth());
       }
+
+      if (collision.gameObject.tag == "Pill") {
+        health += 0.2f;
+        Destroy(collision.gameObject);
+      }
+
+      
     }
 
     void OnTriggerExit(Collider collision){
